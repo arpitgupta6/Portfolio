@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-page {
+        background-color: #021227;
+      }
+      .text-color {
+        color: #309543;
+      }
+      .border-color {
+        border-color: #309543;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full min-h-screen hero-page">
+      <nav class="px-40 flex justify-between item-centre shadow-xl p-2">
+        <ul>
+          <a
+            href="#About"
+            class="block px-4 py-2 text-xl text-white hover:text-gray-200"
+            >About</a
+          >
+        </ul>
+        <ul>
+          <a
+            href="#Skills"
+            class="block px-4 py-2 text-xl text-white hover:text-gray-200"
+            >Skills</a
+          >
+        </ul>
+        <ul>
+          <a
+            href="#Projects"
+            class="block px-4 py-2 text-xl text-white hover:text-gray-200"
+            >Projects</a
+          >
+        </ul>
+        <ul>
+          <a
+            href="#contacts"
+            class="block px-4 py-2 text-xl text-white hover:text-gray-200"
+            >Contact</a
+          >
+        </ul>
+      </nav>
+      <section class="w-full mt-20 px-6">
+        <div
+          id="About"
+          class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto"
+        >
+          <!-- Left Side: Text Content -->
+          <div class="w-full md:w-1/2">
+            <p class="text-2xl font-semibold text-color">Hi, My Name is</p>
+            <h2
+              style="font-family: Roboto, sans-serif"
+              class="font-bold text-5xl text-white"
+            >
+              Arpit Gupta
+            </h2>
+            <h2 class="text-3xl font-semibold text-color">
+              Software Developer
+            </h2>
+            <p class="mt-2 text-xl text-white">
+              "I have a Bachelor's degree in Computer Engineering.<br />
+              Currently, I am focused on learning Frontend Development.<br />
+              I love building products that can be used by millions of people."
+              <br />
+              <span class="font-bold text-green-500 text-xl text-color"
+                >Open for work & Collaboration.</span
+              >
+            </p>
+            <div class="mt-10">
+              <a
+                href="#Skills"
+                class="px-10 py-3 text-green-500 border-2 border-color font-bold transition-all hover:bg-[#30954232] text-color rounded-md"
+              >
+                Check out My Skills
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side: Image -->
+          <div class="w-full md:w-1/3 mt-10 md:mt-0 flex justify-center">
+            <img
+              src="./image/arpit.jpg"
+              alt="Arpit Gupta"
+              class="rounded-full shadow-lg w-80 h-80 object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="Skills" class="max-w-6xl mx-auto px-6 text-center mt-32">
+          <h2
+            class="text-3xl font-bold text-white mb-6 flex items-center justify-center"
+          >
+            <span class="border-t border-color flex-1"></span>
+            <span class="px-8 text-4xl">My Skills</span>
+            <span class="border-t border-color flex-1"></span>
+          </h2>
+
+          <div class="flex gap-5 overflow-x-auto">
+            <div
+              class="shadow-lg rounded-xl p-6 flex-shrink-0 flex flex-col items-center w-48"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+                class="w-16 h-16 mb-3"
+              />
+              <p class="text-lg font-semibold text-white">HTML5</p>
+            </div>
+
+            <div
+              class="shadow-lg rounded-xl p-6 flex-shrink-0 flex flex-col items-center w-48"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+                class="w-16 h-16 mb-3"
+              />
+              <p class="text-lg font-semibold text-white">CSS3</p>
+            </div>
+
+            <div
+              class="shadow-lg rounded-xl p-6 flex-shrink-0 flex flex-col items-center w-48"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                class="w-16 h-16 mb-3"
+              />
+              <p class="text-lg font-semibold text-white">JavaScript</p>
+            </div>
+
+            <div
+              class="shadow-lg rounded-xl p-6 flex-shrink-0 flex flex-col items-center w-48"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                class="w-16 h-16 mb-3"
+              />
+              <p class="text-lg font-semibold text-white">React</p>
+            </div>
+
+            <div
+              class="shadow-lg rounded-xl p-6 flex-shrink-0 flex flex-col items-center w-48"
+            >
+              <img
+                src="https://images.seeklogo.com/logo-png/43/1/tailwind-css-logo-png_seeklogo-434090.png"
+                alt="React"
+                class="w-16 h-16 mb-3"
+              />
+              <p class="text-lg font-semibold text-white">tailwindcss</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Projects" class="hero-page py-12 flex justify-center mt-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold text-white mb-6">My Projects</h2>
+          <div class="flex flex-wrap justify-center gap-6">
+            <!-- Project 1 -->
+            <div
+              class="bg-gray-100 bg-opacity-25 shadow-lg rounded-xl p-6 max-w-md w-full sm:w-1/2 md:w-[300px]"
+            >
+              <h3 class="text-2xl font-semibold mb-2">Spotify Clone</h3>
+              <p class="text-white">
+                Crafted a dynamic and user-friendly music streaming application
+                using React. Integrated key functionalities such as playlist
+                creation, real-time search, and seamless playback. Prioritized
+                performance and enhanced user experience through efficient state
+                management. Designed an elegant and intuitive user interface for
+                optimal usability.
+              </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="bg-gray-100 bg-opacity-25 shadow-lg rounded-xl p-6 max-w-md w-full sm:w-1/2 md:w-[300px]"
+            >
+              <h3 class="text-2xl font-semibold mb-2">Dinevio</h3>
+              <p class="text-white">
+                Built a responsive and user-friendly food delivery web
+                application inspired by Swiggy using React.js, React Router,
+                Context API, and Tailwind CSS. Implemented features like
+                restaurant listings, menu display, add-to-cart functionality,
+                offers section, and cart summary with applied discounts. Focused
+                on component reusability, state management, and smooth user
+                experience.
+              </p>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="bg-gray-100 bg-opacity-25 shadow-lg rounded-xl p-6 max-w-md w-full sm:w-1/2 md:w-[300px]"
+            >
+              <h3 class="text-2xl font-semibold mb-2">
+                User Authentication for Hackathon Listing
+              </h3>
+              <p class="text-white">
+                A full-stack Hackathon Management Platform built with React and
+                Django REST Framework. It supports secure user authentication,
+                hackathon registration, and admin features like creating,
+                updating, and deleting events. The platform displays real-time
+                hackathon status and offers a responsive, user-friendly
+                interface for both users and admins.
+              </p>
+              <a
+                href="https://hackathon-2-0-gold.vercel.app/"
+                class="mt-4 inline-block text-green-500 hover:text-green-600 font-bold"
+                >View Project</a
+              >
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="hero-page py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold text-white mb-6">Contact Me</h2>
+          <div class="flex justify-center space-x-6">
+            <a
+              href="https://www.linkedin.com/feed/"
+              target="_blank"
+              class="bg-white shadow-lg rounded-xl p-4 flex items-center space-x-2 rounded-full"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                alt="LinkedIn"
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="bg-white shadow-lg rounded-xl p-4 flex items-center space-x-2 rounded-full"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=er.arpitgupta1@gmail.com"
+              target="_blank"
+              class="bg-white shadow-lg rounded-xl p-4 flex items-center space-x-2"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                alt="Gmail"
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
